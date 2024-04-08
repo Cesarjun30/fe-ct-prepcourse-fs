@@ -5,6 +5,27 @@ function breakStatement(num) {
   // la ejecución y retornar el string: "Se interrumpió la ejecución".
   // PISTA: Utiliza el statement 'break'.
   // Tu código:
+
+  let newArray = [];
+  let interrumpir = false;
+  for (let i = 2; i < 22; i = i + 2) {
+    let nuevoValor = i + num;
+    if (nuevoValor === 10) {
+      interrumpir = true;
+
+      break;
+    } else {
+      newArray.push(nuevoValor);
+    }
+  }
+
+  if (interrumpir) {
+    return "Se interrumpió la ejecución";
+  } else {
+    return newArray;
+  }
 }
+
+console.log(breakStatement(-4));
 
 module.exports = breakStatement;

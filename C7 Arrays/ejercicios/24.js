@@ -5,6 +5,28 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
+
+  let newArray = [];
+ 
+  for (let i = 2; i < 20; i  = i + 2) {
+    let nuevoValor = num + i;
+    if (i === 10 / 2) {
+     continue 
+     
+    }else{ newArray.push(nuevoValor);} 
+     
+    
+       
+     
+    
+   }
+    
+    
+    //console.log(i);
+    
+  
+  return newArray;
 }
+console.log(continueStatement(50));
 
 module.exports = continueStatement;

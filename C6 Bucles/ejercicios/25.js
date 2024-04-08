@@ -8,16 +8,16 @@ function esPalindromo(string) {
 
   let palabraNueva = string 
   if (string === palabraNueva.split("").reverse().join("")) {
-   console.log(palabraNueva)
+   console.log(palabraNueva.split("").reverse().join(""))
    return true;
   } else {
-   console.log(palabraNueva)
+   console.log(palabraNueva.split("").reverse().join(""))
     return false;
   }
   
 }
 
-esPalindromo('asa asa')
+//esPalindromo('asa asa')
 
 // let palabra = "unu";
 // let otra = "unu";
